@@ -1,0 +1,575 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0425.1340                               -->
+<workbook original-version='18.1' source-build='2024.1.2 (20241.24.0425.1340)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='TSM_20201207_20210307' inline='true' name='federated.0w2rtw815n26g5149i1zf0r9dbev' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='TSM_20201207_20210307' name='textscan.0p3ywrp1w5oon71as73zh0u11ncn'>
+            <connection class='textscan' directory='C:/Users/user/Desktop/_dataset_202209/_dataset/09' filename='TSM_20201207_20210307.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0p3ywrp1w5oon71as73zh0u11ncn' name='TSM_20201207_20210307.csv' table='[TSM_20201207_20210307#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='zh_TW' separator=','>
+            <column datatype='date' name='Date' ordinal='0' />
+            <column datatype='real' name='Open' ordinal='1' />
+            <column datatype='real' name='High' ordinal='2' />
+            <column datatype='real' name='Low' ordinal='3' />
+            <column datatype='real' name='Close' ordinal='4' />
+            <column datatype='real' name='Adj Close' ordinal='5' />
+            <column datatype='integer' name='Volume' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0p3ywrp1w5oon71as73zh0u11ncn' name='TSM_20201207_20210307.csv' table='[TSM_20201207_20210307#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='zh_TW' separator=','>
+            <column datatype='date' name='Date' ordinal='0' />
+            <column datatype='real' name='Open' ordinal='1' />
+            <column datatype='real' name='High' ordinal='2' />
+            <column datatype='real' name='Low' ordinal='3' />
+            <column datatype='real' name='Close' ordinal='4' />
+            <column datatype='real' name='Adj Close' ordinal='5' />
+            <column datatype='integer' name='Volume' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[TSM_20201207_20210307.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;zh_Hans_CN&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;zh_TW&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[TSM_20201207_20210307.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TSM_20201207_20210307.csv_F238746A6F0545CCA58943E1F1ACAB6F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Open</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Open]</local-name>
+            <parent-name>[TSM_20201207_20210307.csv]</parent-name>
+            <remote-alias>Open</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TSM_20201207_20210307.csv_F238746A6F0545CCA58943E1F1ACAB6F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>High</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[High]</local-name>
+            <parent-name>[TSM_20201207_20210307.csv]</parent-name>
+            <remote-alias>High</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TSM_20201207_20210307.csv_F238746A6F0545CCA58943E1F1ACAB6F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Low</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Low]</local-name>
+            <parent-name>[TSM_20201207_20210307.csv]</parent-name>
+            <remote-alias>Low</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TSM_20201207_20210307.csv_F238746A6F0545CCA58943E1F1ACAB6F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Close</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Close]</local-name>
+            <parent-name>[TSM_20201207_20210307.csv]</parent-name>
+            <remote-alias>Close</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TSM_20201207_20210307.csv_F238746A6F0545CCA58943E1F1ACAB6F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Adj Close</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Adj Close]</local-name>
+            <parent-name>[TSM_20201207_20210307.csv]</parent-name>
+            <remote-alias>Adj Close</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TSM_20201207_20210307.csv_F238746A6F0545CCA58943E1F1ACAB6F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Volume</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Volume]</local-name>
+            <parent-name>[TSM_20201207_20210307.csv]</parent-name>
+            <remote-alias>Volume</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TSM_20201207_20210307.csv_F238746A6F0545CCA58943E1F1ACAB6F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='high_low' datatype='real' name='[Calculation_616148739530547200]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Low] - [High]' />
+      </column>
+      <column caption='open - close' datatype='real' name='[Calculation_616148739533824001]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Close] - [Open]' />
+      </column>
+      <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+      <column datatype='real' name='[High]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Open]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='TSM_20201207_20210307.csv' datatype='table' name='[__tableau_internal_object_id__].[TSM_20201207_20210307.csv_F238746A6F0545CCA58943E1F1ACAB6F]' role='measure' type='quantitative' />
+      <column-instance column='[Date]' derivation='None' name='[none:Date:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[High]' derivation='Sum' name='[sum:High:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Open]' derivation='Sum' name='[sum:Open:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='zh_TW' class='hyper' dbname='C:/Users/user/AppData/Local/Temp/TableauTemp/#TableauTemp_1kbz0351osv7dr1d44r640725snw.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/07/2024 06:29:58 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>0</ordinal>
+              <family>TSM_20201207_20210307.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>61</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TSM_20201207_20210307.csv_F238746A6F0545CCA58943E1F1ACAB6F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Open</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Open]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Open</remote-alias>
+              <ordinal>1</ordinal>
+              <family>TSM_20201207_20210307.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>61</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TSM_20201207_20210307.csv_F238746A6F0545CCA58943E1F1ACAB6F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>High</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[High]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>High</remote-alias>
+              <ordinal>2</ordinal>
+              <family>TSM_20201207_20210307.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>61</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TSM_20201207_20210307.csv_F238746A6F0545CCA58943E1F1ACAB6F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Low</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Low]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Low</remote-alias>
+              <ordinal>3</ordinal>
+              <family>TSM_20201207_20210307.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>61</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TSM_20201207_20210307.csv_F238746A6F0545CCA58943E1F1ACAB6F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Close</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Close]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Close</remote-alias>
+              <ordinal>4</ordinal>
+              <family>TSM_20201207_20210307.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>60</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TSM_20201207_20210307.csv_F238746A6F0545CCA58943E1F1ACAB6F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Adj Close</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Adj Close]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Adj Close</remote-alias>
+              <ordinal>5</ordinal>
+              <family>TSM_20201207_20210307.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>60</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TSM_20201207_20210307.csv_F238746A6F0545CCA58943E1F1ACAB6F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Volume</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Volume]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Volume</remote-alias>
+              <ordinal>6</ordinal>
+              <family>TSM_20201207_20210307.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>61</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TSM_20201207_20210307.csv_F238746A6F0545CCA58943E1F1ACAB6F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0w2rtw815n26g5149i1zf0r9dbev].[sum:High:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0w2rtw815n26g5149i1zf0r9dbev].[sum:Open:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Taiwan&quot;' />
+      </semantic-values>
+      <filter class='quantitative' column='[none:Date:qk]' filter-group='2' included-values='in-range'>
+        <min>#2021-02-01#</min>
+        <max>#2021-02-28#</max>
+      </filter>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='TSM_20201207_20210307.csv' id='TSM_20201207_20210307.csv_F238746A6F0545CCA58943E1F1ACAB6F'>
+            <properties context=''>
+              <relation connection='textscan.0p3ywrp1w5oon71as73zh0u11ncn' name='TSM_20201207_20210307.csv' table='[TSM_20201207_20210307#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='zh_TW' separator=','>
+                  <column datatype='date' name='Date' ordinal='0' />
+                  <column datatype='real' name='Open' ordinal='1' />
+                  <column datatype='real' name='High' ordinal='2' />
+                  <column datatype='real' name='Low' ordinal='3' />
+                  <column datatype='real' name='Close' ordinal='4' />
+                  <column datatype='real' name='Adj Close' ordinal='5' />
+                  <column datatype='integer' name='Volume' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='工作表 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>台積電 2021年2月 [最高價  最低價] &amp; [開盤價 收盤價] 股價K線圖</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='TSM_20201207_20210307' name='federated.0w2rtw815n26g5149i1zf0r9dbev' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0w2rtw815n26g5149i1zf0r9dbev'>
+            <column caption='high_low' datatype='real' name='[Calculation_616148739530547200]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Low] - [High]' />
+            </column>
+            <column caption='open - close' datatype='real' name='[Calculation_616148739533824001]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Close] - [Open]' />
+            </column>
+            <column datatype='real' name='[Close]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[High]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Low]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Open]' role='measure' type='quantitative' />
+            <column-instance column='[Date]' derivation='Day' name='[dy:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_616148739530547200]' derivation='Sum' name='[sum:Calculation_616148739530547200:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_616148739533824001]' derivation='Sum' name='[sum:Calculation_616148739533824001:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[High]' derivation='Sum' name='[sum:High:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Open]' derivation='Sum' name='[sum:Open:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0w2rtw815n26g5149i1zf0r9dbev].[sum:Open:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+            <encoding attr='space' class='0' field='[federated.0w2rtw815n26g5149i1zf0r9dbev].[sum:High:qk]' field-type='quantitative' major-origin='0.0' major-spacing='1.0' max='149.30999685' min='120.0' minor-origin='0.0' minor-spacing='1.0' range-type='fixed' scope='rows' type='space' />
+            <format attr='tick-color' field='[federated.0w2rtw815n26g5149i1zf0r9dbev].[sum:High:qk]' value='#0000ff' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0w2rtw815n26g5149i1zf0r9dbev].[sum:Calculation_616148739533824001:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#00aa00</color>
+                <color>#0fae0f</color>
+                <color>#20b220</color>
+                <color>#31b631</color>
+                <color>#44bb44</color>
+                <color>#56bf56</color>
+                <color>#6ac36a</color>
+                <color>#7fc77f</color>
+                <color>#94cc94</color>
+                <color>#aad0aa</color>
+                <color>#c1d4c1</color>
+                <color>#d9d9d9</color>
+                <color>#dcc8c8</color>
+                <color>#dfb7b7</color>
+                <color>#e3a5a5</color>
+                <color>#e69292</color>
+                <color>#ea7f7f</color>
+                <color>#ed6c6c</color>
+                <color>#f15757</color>
+                <color>#f44242</color>
+                <color>#f82d2d</color>
+                <color>#fb1616</color>
+                <color>#ff0000</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='GanttBar' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0w2rtw815n26g5149i1zf0r9dbev].[sum:High:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='GanttBar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0w2rtw815n26g5149i1zf0r9dbev].[:Measure Names]' />
+              <size column='[federated.0w2rtw815n26g5149i1zf0r9dbev].[sum:Calculation_616148739530547200:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.0099999997764825821' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0w2rtw815n26g5149i1zf0r9dbev].[sum:Open:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='GanttBar' />
+            <encodings>
+              <color column='[federated.0w2rtw815n26g5149i1zf0r9dbev].[sum:Calculation_616148739533824001:qk]' />
+              <size column='[federated.0w2rtw815n26g5149i1zf0r9dbev].[sum:Calculation_616148739533824001:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.0w2rtw815n26g5149i1zf0r9dbev].[sum:High:qk] + [federated.0w2rtw815n26g5149i1zf0r9dbev].[sum:Open:qk])</rows>
+        <cols>[federated.0w2rtw815n26g5149i1zf0r9dbev].[dy:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{10A3DA8E-BBD8-408A-83DA-D219959FDBA3}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='工作表 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0w2rtw815n26g5149i1zf0r9dbev].[:Measure Names]' type='color' />
+            <card pane-specification-id='2' param='[federated.0w2rtw815n26g5149i1zf0r9dbev].[sum:Calculation_616148739533824001:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0w2rtw815n26g5149i1zf0r9dbev].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{7F7F0844-CA83-4571-90FE-543A9BE039C0}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='工作表 1' width='192'>
+      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
+      fQVOgF/K/wM8JdHuGWpfJQAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
