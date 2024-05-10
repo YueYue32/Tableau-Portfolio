@@ -1,0 +1,640 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0425.1340                               -->
+<workbook original-version='18.1' source-build='2024.1.2 (20241.24.0425.1340)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='1.5_election_shugiin_h29' inline='true' name='federated.0pjlefj186d2a71aub6ub0v74td5' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='1.5_election_shugiin_h29' name='textscan.0ahmqpw0kuapc21bhesrx1pkif34'>
+            <connection class='textscan' directory='C:/Users/user/Desktop/Chap01' filename='1.5_election_shugiin_h29.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='樞紐' type='pivot'>
+          <columns>
+            <column datatype='string' name='樞紐欄位名稱' />
+            <column datatype='real' name='樞紐欄位值' />
+          </columns>
+          <tag name='樞紐欄位名稱'>
+            <value name='[１８歲（％）]' />
+            <value name='[１９歲（％）]' />
+            <value name='[２０歲（％）]' />
+            <value name='[２１～２４歲（％）]' />
+            <value name='[２５～２９歲（％）]' />
+            <value name='[３０～３４歲（％）]' />
+            <value name='[３５～３９歲（％）]' />
+            <value name='[４０～４４歲（％）]' />
+            <value name='[４５～４９歲（％）]' />
+            <value name='[５０～５４歲（％）]' />
+            <value name='[５５～５９歲（％）]' />
+            <value name='[６０～６４歲（％）]' />
+            <value name='[６５～６９歲（％）]' />
+            <value name='[７０～７４歲（％）]' />
+            <value name='[７５～７９歲（％）]' />
+            <value name='[８０歲以上（％）]' />
+          </tag>
+          <groups>
+            <group name='樞紐欄位值'>
+              <field name='[1.5_election_shugiin_h29.csv].[１８歲（％）]' />
+              <field name='[1.5_election_shugiin_h29.csv].[１９歲（％）]' />
+              <field name='[1.5_election_shugiin_h29.csv].[２０歲（％）]' />
+              <field name='[1.5_election_shugiin_h29.csv].[２１～２４歲（％）]' />
+              <field name='[1.5_election_shugiin_h29.csv].[２５～２９歲（％）]' />
+              <field name='[1.5_election_shugiin_h29.csv].[３０～３４歲（％）]' />
+              <field name='[1.5_election_shugiin_h29.csv].[３５～３９歲（％）]' />
+              <field name='[1.5_election_shugiin_h29.csv].[４０～４４歲（％）]' />
+              <field name='[1.5_election_shugiin_h29.csv].[４５～４９歲（％）]' />
+              <field name='[1.5_election_shugiin_h29.csv].[５０～５４歲（％）]' />
+              <field name='[1.5_election_shugiin_h29.csv].[５５～５９歲（％）]' />
+              <field name='[1.5_election_shugiin_h29.csv].[６０～６４歲（％）]' />
+              <field name='[1.5_election_shugiin_h29.csv].[６５～６９歲（％）]' />
+              <field name='[1.5_election_shugiin_h29.csv].[７０～７４歲（％）]' />
+              <field name='[1.5_election_shugiin_h29.csv].[７５～７９歲（％）]' />
+              <field name='[1.5_election_shugiin_h29.csv].[８０歲以上（％）]' />
+            </group>
+          </groups>
+          <relation connection='textscan.0ahmqpw0kuapc21bhesrx1pkif34' name='1.5_election_shugiin_h29.csv' table='[1.5_election_shugiin_h29#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='zh_TW' separator=','>
+              <column datatype='string' name='區域' ordinal='0' />
+              <column datatype='real' name='１８歲（％）' ordinal='1' />
+              <column datatype='real' name='１９歲（％）' ordinal='2' />
+              <column datatype='real' name='２０歲（％）' ordinal='3' />
+              <column datatype='real' name='２１～２４歲（％）' ordinal='4' />
+              <column datatype='real' name='２５～２９歲（％）' ordinal='5' />
+              <column datatype='real' name='３０～３４歲（％）' ordinal='6' />
+              <column datatype='real' name='３５～３９歲（％）' ordinal='7' />
+              <column datatype='real' name='４０～４４歲（％）' ordinal='8' />
+              <column datatype='real' name='４５～４９歲（％）' ordinal='9' />
+              <column datatype='real' name='５０～５４歲（％）' ordinal='10' />
+              <column datatype='real' name='５５～５９歲（％）' ordinal='11' />
+              <column datatype='real' name='６０～６４歲（％）' ordinal='12' />
+              <column datatype='real' name='６５～６９歲（％）' ordinal='13' />
+              <column datatype='real' name='７０～７４歲（％）' ordinal='14' />
+              <column datatype='real' name='７５～７９歲（％）' ordinal='15' />
+              <column datatype='real' name='８０歲以上（％）' ordinal='16' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='樞紐' type='pivot'>
+          <columns>
+            <column datatype='string' name='樞紐欄位名稱' />
+            <column datatype='real' name='樞紐欄位值' />
+          </columns>
+          <tag name='樞紐欄位名稱'>
+            <value name='[１８歲（％）]' />
+            <value name='[１９歲（％）]' />
+            <value name='[２０歲（％）]' />
+            <value name='[２１～２４歲（％）]' />
+            <value name='[２５～２９歲（％）]' />
+            <value name='[３０～３４歲（％）]' />
+            <value name='[３５～３９歲（％）]' />
+            <value name='[４０～４４歲（％）]' />
+            <value name='[４５～４９歲（％）]' />
+            <value name='[５０～５４歲（％）]' />
+            <value name='[５５～５９歲（％）]' />
+            <value name='[６０～６４歲（％）]' />
+            <value name='[６５～６９歲（％）]' />
+            <value name='[７０～７４歲（％）]' />
+            <value name='[７５～７９歲（％）]' />
+            <value name='[８０歲以上（％）]' />
+          </tag>
+          <groups>
+            <group name='樞紐欄位值'>
+              <field name='[1.5_election_shugiin_h29.csv].[１８歲（％）]' />
+              <field name='[1.5_election_shugiin_h29.csv].[１９歲（％）]' />
+              <field name='[1.5_election_shugiin_h29.csv].[２０歲（％）]' />
+              <field name='[1.5_election_shugiin_h29.csv].[２１～２４歲（％）]' />
+              <field name='[1.5_election_shugiin_h29.csv].[２５～２９歲（％）]' />
+              <field name='[1.5_election_shugiin_h29.csv].[３０～３４歲（％）]' />
+              <field name='[1.5_election_shugiin_h29.csv].[３５～３９歲（％）]' />
+              <field name='[1.5_election_shugiin_h29.csv].[４０～４４歲（％）]' />
+              <field name='[1.5_election_shugiin_h29.csv].[４５～４９歲（％）]' />
+              <field name='[1.5_election_shugiin_h29.csv].[５０～５４歲（％）]' />
+              <field name='[1.5_election_shugiin_h29.csv].[５５～５９歲（％）]' />
+              <field name='[1.5_election_shugiin_h29.csv].[６０～６４歲（％）]' />
+              <field name='[1.5_election_shugiin_h29.csv].[６５～６９歲（％）]' />
+              <field name='[1.5_election_shugiin_h29.csv].[７０～７４歲（％）]' />
+              <field name='[1.5_election_shugiin_h29.csv].[７５～７９歲（％）]' />
+              <field name='[1.5_election_shugiin_h29.csv].[８０歲以上（％）]' />
+            </group>
+          </groups>
+          <relation connection='textscan.0ahmqpw0kuapc21bhesrx1pkif34' name='1.5_election_shugiin_h29.csv' table='[1.5_election_shugiin_h29#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='zh_TW' separator=','>
+              <column datatype='string' name='區域' ordinal='0' />
+              <column datatype='real' name='１８歲（％）' ordinal='1' />
+              <column datatype='real' name='１９歲（％）' ordinal='2' />
+              <column datatype='real' name='２０歲（％）' ordinal='3' />
+              <column datatype='real' name='２１～２４歲（％）' ordinal='4' />
+              <column datatype='real' name='２５～２９歲（％）' ordinal='5' />
+              <column datatype='real' name='３０～３４歲（％）' ordinal='6' />
+              <column datatype='real' name='３５～３９歲（％）' ordinal='7' />
+              <column datatype='real' name='４０～４４歲（％）' ordinal='8' />
+              <column datatype='real' name='４５～４９歲（％）' ordinal='9' />
+              <column datatype='real' name='５０～５４歲（％）' ordinal='10' />
+              <column datatype='real' name='５５～５９歲（％）' ordinal='11' />
+              <column datatype='real' name='６０～６４歲（％）' ordinal='12' />
+              <column datatype='real' name='６５～６９歲（％）' ordinal='13' />
+              <column datatype='real' name='７０～７４歲（％）' ordinal='14' />
+              <column datatype='real' name='７５～７９歲（％）' ordinal='15' />
+              <column datatype='real' name='８０歲以上（％）' ordinal='16' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[1.5_election_shugiin_h29.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;zh_Hans_CN&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;zh_TW&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>區域</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[區域]</local-name>
+            <parent-name>[1.5_election_shugiin_h29.csv]</parent-name>
+            <remote-alias>區域</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.5_election_shugiin_h29.csv_3D2033B4DF9C43D0A9C95ACD0367C2BF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>樞紐欄位名稱</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[樞紐欄位名稱]</local-name>
+            <parent-name>[樞紐]</parent-name>
+            <remote-alias>樞紐欄位名稱</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.5_election_shugiin_h29.csv_3D2033B4DF9C43D0A9C95ACD0367C2BF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>樞紐欄位值</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[樞紐欄位值]</local-name>
+            <parent-name>[樞紐]</parent-name>
+            <remote-alias>樞紐欄位值</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.5_election_shugiin_h29.csv_3D2033B4DF9C43D0A9C95ACD0367C2BF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='投票率是否超過50%' datatype='boolean' name='[Calculation_2088544343487709185]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[樞紐欄位值] &gt;= 50' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='1.5_election_shugiin_h29.csv' datatype='table' name='[__tableau_internal_object_id__].[1.5_election_shugiin_h29.csv_3D2033B4DF9C43D0A9C95ACD0367C2BF]' role='measure' type='quantitative' />
+      <column caption='投票率' datatype='real' name='[樞紐欄位值]' role='measure' type='quantitative' />
+      <column caption='年齡' datatype='string' name='[樞紐欄位名稱]' role='dimension' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='zh_TW' class='hyper' dbname='C:/Users/user/AppData/Local/Temp/TableauTemp/#TableauTemp_1puf6qw02s7m421dxchnx1ctxsc7.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/09/2024 11:32:36 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>區域</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[區域]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>區域</remote-alias>
+              <ordinal>0</ordinal>
+              <family>1.5_election_shugiin_h29.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.5_election_shugiin_h29.csv_3D2033B4DF9C43D0A9C95ACD0367C2BF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>樞紐欄位名稱</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[樞紐欄位名稱]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>樞紐欄位名稱</remote-alias>
+              <ordinal>1</ordinal>
+              <family>樞紐</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.5_election_shugiin_h29.csv_3D2033B4DF9C43D0A9C95ACD0367C2BF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>樞紐欄位值</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[樞紐欄位值]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>樞紐欄位值</remote-alias>
+              <ordinal>2</ordinal>
+              <family>樞紐</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>80</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.5_election_shugiin_h29.csv_3D2033B4DF9C43D0A9C95ACD0367C2BF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Taiwan&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='1.5_election_shugiin_h29.csv' id='1.5_election_shugiin_h29.csv_3D2033B4DF9C43D0A9C95ACD0367C2BF'>
+            <properties context=''>
+              <relation name='樞紐' type='pivot'>
+                <columns>
+                  <column datatype='string' name='樞紐欄位名稱' />
+                  <column datatype='real' name='樞紐欄位值' />
+                </columns>
+                <tag name='樞紐欄位名稱'>
+                  <value name='[１８歲（％）]' />
+                  <value name='[１９歲（％）]' />
+                  <value name='[２０歲（％）]' />
+                  <value name='[２１～２４歲（％）]' />
+                  <value name='[２５～２９歲（％）]' />
+                  <value name='[３０～３４歲（％）]' />
+                  <value name='[３５～３９歲（％）]' />
+                  <value name='[４０～４４歲（％）]' />
+                  <value name='[４５～４９歲（％）]' />
+                  <value name='[５０～５４歲（％）]' />
+                  <value name='[５５～５９歲（％）]' />
+                  <value name='[６０～６４歲（％）]' />
+                  <value name='[６５～６９歲（％）]' />
+                  <value name='[７０～７４歲（％）]' />
+                  <value name='[７５～７９歲（％）]' />
+                  <value name='[８０歲以上（％）]' />
+                </tag>
+                <groups>
+                  <group name='樞紐欄位值'>
+                    <field name='[1.5_election_shugiin_h29.csv].[１８歲（％）]' />
+                    <field name='[1.5_election_shugiin_h29.csv].[１９歲（％）]' />
+                    <field name='[1.5_election_shugiin_h29.csv].[２０歲（％）]' />
+                    <field name='[1.5_election_shugiin_h29.csv].[２１～２４歲（％）]' />
+                    <field name='[1.5_election_shugiin_h29.csv].[２５～２９歲（％）]' />
+                    <field name='[1.5_election_shugiin_h29.csv].[３０～３４歲（％）]' />
+                    <field name='[1.5_election_shugiin_h29.csv].[３５～３９歲（％）]' />
+                    <field name='[1.5_election_shugiin_h29.csv].[４０～４４歲（％）]' />
+                    <field name='[1.5_election_shugiin_h29.csv].[４５～４９歲（％）]' />
+                    <field name='[1.5_election_shugiin_h29.csv].[５０～５４歲（％）]' />
+                    <field name='[1.5_election_shugiin_h29.csv].[５５～５９歲（％）]' />
+                    <field name='[1.5_election_shugiin_h29.csv].[６０～６４歲（％）]' />
+                    <field name='[1.5_election_shugiin_h29.csv].[６５～６９歲（％）]' />
+                    <field name='[1.5_election_shugiin_h29.csv].[７０～７４歲（％）]' />
+                    <field name='[1.5_election_shugiin_h29.csv].[７５～７９歲（％）]' />
+                    <field name='[1.5_election_shugiin_h29.csv].[８０歲以上（％）]' />
+                  </group>
+                </groups>
+                <relation connection='textscan.0ahmqpw0kuapc21bhesrx1pkif34' name='1.5_election_shugiin_h29.csv' table='[1.5_election_shugiin_h29#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='zh_TW' separator=','>
+                    <column datatype='string' name='區域' ordinal='0' />
+                    <column datatype='real' name='１８歲（％）' ordinal='1' />
+                    <column datatype='real' name='１９歲（％）' ordinal='2' />
+                    <column datatype='real' name='２０歲（％）' ordinal='3' />
+                    <column datatype='real' name='２１～２４歲（％）' ordinal='4' />
+                    <column datatype='real' name='２５～２９歲（％）' ordinal='5' />
+                    <column datatype='real' name='３０～３４歲（％）' ordinal='6' />
+                    <column datatype='real' name='３５～３９歲（％）' ordinal='7' />
+                    <column datatype='real' name='４０～４４歲（％）' ordinal='8' />
+                    <column datatype='real' name='４５～４９歲（％）' ordinal='9' />
+                    <column datatype='real' name='５０～５４歲（％）' ordinal='10' />
+                    <column datatype='real' name='５５～５９歲（％）' ordinal='11' />
+                    <column datatype='real' name='６０～６４歲（％）' ordinal='12' />
+                    <column datatype='real' name='６５～６９歲（％）' ordinal='13' />
+                    <column datatype='real' name='７０～７４歲（％）' ordinal='14' />
+                    <column datatype='real' name='７５～７９歲（％）' ordinal='15' />
+                    <column datatype='real' name='８０歲以上（％）' ordinal='16' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='工作表 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='1.5_election_shugiin_h29' name='federated.0pjlefj186d2a71aub6ub0v74td5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0pjlefj186d2a71aub6ub0v74td5'>
+            <column caption='投票率是否超過50%' datatype='boolean' name='[Calculation_2088544343487709185]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[樞紐欄位值] &gt;= 50' />
+            </column>
+            <column-instance column='[Calculation_2088544343487709185]' derivation='None' name='[none:Calculation_2088544343487709185:nk]' pivot='key' type='nominal' />
+            <column-instance column='[區域]' derivation='None' name='[none:區域:nk]' pivot='key' type='nominal' />
+            <column-instance column='[樞紐欄位名稱]' derivation='None' name='[none:樞紐欄位名稱:nk]' pivot='key' type='nominal' />
+            <column-instance column='[樞紐欄位值]' derivation='Sum' name='[sum:樞紐欄位值:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[區域]' role='dimension' type='nominal' />
+            <column caption='投票率' datatype='real' name='[樞紐欄位值]' role='measure' type='quantitative' />
+            <column caption='年齡' datatype='string' name='[樞紐欄位名稱]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0pjlefj186d2a71aub6ub0v74td5].[none:Calculation_2088544343487709185:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0pjlefj186d2a71aub6ub0v74td5].[sum:樞紐欄位值:qk]' enable-instant-analytics='true' formula='constant' id='refline0' label-type='automatic' scope='per-table' value='50.0' value-column='[federated.0pjlefj186d2a71aub6ub0v74td5].[sum:樞紐欄位值:qk]' z-order='1' />
+            <reference-line axis-column='[federated.0pjlefj186d2a71aub6ub0v74td5].[sum:樞紐欄位值:qk]' enable-instant-analytics='true' formula='constant' id='refline1' label-type='automatic' scope='per-table' value='50.0' value-column='[federated.0pjlefj186d2a71aub6ub0v74td5].[sum:樞紐欄位值:qk]' z-order='2' />
+          </pane>
+        </panes>
+        <rows>[federated.0pjlefj186d2a71aub6ub0v74td5].[none:樞紐欄位名稱:nk]</rows>
+        <cols>([federated.0pjlefj186d2a71aub6ub0v74td5].[none:區域:nk] * [federated.0pjlefj186d2a71aub6ub0v74td5].[sum:樞紐欄位值:qk])</cols>
+      </table>
+      <simple-id uuid='{997D58A6-9BF3-400D-86A1-D60EE088576C}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='工作表 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0pjlefj186d2a71aub6ub0v74td5].[none:Calculation_2088544343487709185:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-height' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0pjlefj186d2a71aub6ub0v74td5].[none:Calculation_2088544343487709185:nk]</field>
+            <field>[federated.0pjlefj186d2a71aub6ub0v74td5].[none:區域:nk]</field>
+            <field>[federated.0pjlefj186d2a71aub6ub0v74td5].[none:樞紐欄位名稱:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BCE7863F-5CD9-4215-A4B7-A6FD914EF4A9}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='工作表 1' width='192'>
+      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
+      x024DDretv//y8aDYuNcZ8sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
