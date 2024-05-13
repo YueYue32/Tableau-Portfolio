@@ -1,0 +1,1686 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0425.1340                               -->
+<workbook original-version='18.1' source-build='2024.1.2 (20241.24.0425.1340)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='1.6_population_tokyo(2020)+' inline='true' name='federated.10k287709pm5yf1289xfx1rtgca0' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='1.6_population_tokyo(2020)' name='textscan.05stnuf1p6encb108z0k70duyxa9'>
+            <connection class='textscan' directory='C:/Users/user/Desktop/Chap01/1.6_trade_price' filename='1.6_population_tokyo(2020).csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.05stnuf1p6encb108z0k70duyxa9' name='1.6_population_tokyo(2020).csv' table='[1.6_population_tokyo(2020)#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='zh_TW' separator=','>
+            <column datatype='integer' name='郵遞區號' ordinal='0' />
+            <column datatype='string' name='地區' ordinal='1' />
+            <column datatype='real' name='面積（平方公里）' ordinal='2' />
+            <column datatype='integer' name='人口／總數（人）' ordinal='3' />
+            <column datatype='integer' name='人口／男（人）' ordinal='4' />
+            <column datatype='integer' name='人口／女（人）' ordinal='5' />
+            <column datatype='real' name='65歲以上人口比例（％）' ordinal='6' />
+            <column datatype='integer' name='（參考）戶數（戶）' ordinal='7' />
+            <column datatype='integer' name='小學兒童人數（人）' ordinal='8' />
+            <column datatype='integer' name='中學學生人數（人）' ordinal='9' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.05stnuf1p6encb108z0k70duyxa9' name='1.6_population_tokyo(2020).csv' table='[1.6_population_tokyo(2020)#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='zh_TW' separator=','>
+              <column datatype='integer' name='郵遞區號' ordinal='0' />
+              <column datatype='string' name='地區' ordinal='1' />
+              <column datatype='real' name='面積（平方公里）' ordinal='2' />
+              <column datatype='integer' name='人口／總數（人）' ordinal='3' />
+              <column datatype='integer' name='人口／男（人）' ordinal='4' />
+              <column datatype='integer' name='人口／女（人）' ordinal='5' />
+              <column datatype='real' name='65歲以上人口比例（％）' ordinal='6' />
+              <column datatype='integer' name='（參考）戶數（戶）' ordinal='7' />
+              <column datatype='integer' name='小學兒童人數（人）' ordinal='8' />
+              <column datatype='integer' name='中學學生人數（人）' ordinal='9' />
+            </columns>
+          </relation>
+          <relation connection='textscan.05stnuf1p6encb108z0k70duyxa9' name='1.6_trade_prices_tokyo(2020).csv' table='[1.6_trade_prices_tokyo(2020)#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='zh_TW' separator=','>
+              <column datatype='integer' name='No' ordinal='0' />
+              <column datatype='string' name='種類' ordinal='1' />
+              <column datatype='string' name='地域' ordinal='2' />
+              <column datatype='integer' name='市區代碼' ordinal='3' />
+              <column datatype='string' name='都道府県名' ordinal='4' />
+              <column datatype='string' name='市区町村名' ordinal='5' />
+              <column datatype='string' name='地区名' ordinal='6' />
+              <column datatype='string' name='最寄駅：名称' ordinal='7' />
+              <column datatype='integer' name='最寄駅：距離（分）' ordinal='8' />
+              <column datatype='integer' name='成交價格（總額）' ordinal='9' />
+              <column datatype='integer' name='坪單價' ordinal='10' />
+              <column datatype='string' name='間取り' ordinal='11' />
+              <column datatype='integer' name='面積（㎡）' ordinal='12' />
+              <column datatype='integer' name='成交價格（㎡單價）' ordinal='13' />
+              <column datatype='string' name='土地の形状' ordinal='14' />
+              <column datatype='real' name='間口' ordinal='15' />
+              <column datatype='integer' name='延床面積（㎡）' ordinal='16' />
+              <column datatype='string' name='建築年' ordinal='17' />
+              <column datatype='string' name='建物の構造' ordinal='18' />
+              <column datatype='string' name='用途' ordinal='19' />
+              <column datatype='string' name='未來的用途' ordinal='20' />
+              <column datatype='string' name='前面道路：方位' ordinal='21' />
+              <column datatype='string' name='前面道路：種類' ordinal='22' />
+              <column datatype='real' name='前面道路：幅員（ｍ）' ordinal='23' />
+              <column datatype='string' name='都市計画' ordinal='24' />
+              <column datatype='integer' name='建ぺい率（％）' ordinal='25' />
+              <column datatype='integer' name='容積率（％）' ordinal='26' />
+              <column datatype='string' name='取引時点' ordinal='27' />
+              <column datatype='string' name='改装' ordinal='28' />
+              <column datatype='string' name='取引の事情等' ordinal='29' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[1.6_population_tokyo(2020).csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;zh_Hans_CN&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;zh_TW&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[1.6_trade_prices_tokyo(2020).csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;zh_Hans_CN&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;zh_TW&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>郵遞區號</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[郵遞區號]</local-name>
+            <parent-name>[1.6_population_tokyo(2020).csv]</parent-name>
+            <remote-alias>郵遞區號</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_population_tokyo(2020).csv_868EC77B114040269392EC5544B11A9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>地區</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[地區]</local-name>
+            <parent-name>[1.6_population_tokyo(2020).csv]</parent-name>
+            <remote-alias>地區</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_population_tokyo(2020).csv_868EC77B114040269392EC5544B11A9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>面積（平方公里）</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[面積（平方公里）]</local-name>
+            <parent-name>[1.6_population_tokyo(2020).csv]</parent-name>
+            <remote-alias>面積（平方公里）</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_population_tokyo(2020).csv_868EC77B114040269392EC5544B11A9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>人口／總數（人）</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[人口／總數（人）]</local-name>
+            <parent-name>[1.6_population_tokyo(2020).csv]</parent-name>
+            <remote-alias>人口／總數（人）</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_population_tokyo(2020).csv_868EC77B114040269392EC5544B11A9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>人口／男（人）</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[人口／男（人）]</local-name>
+            <parent-name>[1.6_population_tokyo(2020).csv]</parent-name>
+            <remote-alias>人口／男（人）</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_population_tokyo(2020).csv_868EC77B114040269392EC5544B11A9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>人口／女（人）</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[人口／女（人）]</local-name>
+            <parent-name>[1.6_population_tokyo(2020).csv]</parent-name>
+            <remote-alias>人口／女（人）</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_population_tokyo(2020).csv_868EC77B114040269392EC5544B11A9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>65歲以上人口比例（％）</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[65歲以上人口比例（％）]</local-name>
+            <parent-name>[1.6_population_tokyo(2020).csv]</parent-name>
+            <remote-alias>65歲以上人口比例（％）</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_population_tokyo(2020).csv_868EC77B114040269392EC5544B11A9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>（參考）戶數（戶）</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[（參考）戶數（戶）]</local-name>
+            <parent-name>[1.6_population_tokyo(2020).csv]</parent-name>
+            <remote-alias>（參考）戶數（戶）</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_population_tokyo(2020).csv_868EC77B114040269392EC5544B11A9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>小學兒童人數（人）</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[小學兒童人數（人）]</local-name>
+            <parent-name>[1.6_population_tokyo(2020).csv]</parent-name>
+            <remote-alias>小學兒童人數（人）</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_population_tokyo(2020).csv_868EC77B114040269392EC5544B11A9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>中學學生人數（人）</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[中學學生人數（人）]</local-name>
+            <parent-name>[1.6_population_tokyo(2020).csv]</parent-name>
+            <remote-alias>中學學生人數（人）</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_population_tokyo(2020).csv_868EC77B114040269392EC5544B11A9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>No</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[No]</local-name>
+            <parent-name>[1.6_trade_prices_tokyo(2020).csv]</parent-name>
+            <remote-alias>No</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>種類</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[種類]</local-name>
+            <parent-name>[1.6_trade_prices_tokyo(2020).csv]</parent-name>
+            <remote-alias>種類</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>地域</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[地域]</local-name>
+            <parent-name>[1.6_trade_prices_tokyo(2020).csv]</parent-name>
+            <remote-alias>地域</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>市區代碼</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[市區代碼]</local-name>
+            <parent-name>[1.6_trade_prices_tokyo(2020).csv]</parent-name>
+            <remote-alias>市區代碼</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>都道府県名</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[都道府県名]</local-name>
+            <parent-name>[1.6_trade_prices_tokyo(2020).csv]</parent-name>
+            <remote-alias>都道府県名</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>市区町村名</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[市区町村名]</local-name>
+            <parent-name>[1.6_trade_prices_tokyo(2020).csv]</parent-name>
+            <remote-alias>市区町村名</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>地区名</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[地区名]</local-name>
+            <parent-name>[1.6_trade_prices_tokyo(2020).csv]</parent-name>
+            <remote-alias>地区名</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>最寄駅：名称</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[最寄駅：名称]</local-name>
+            <parent-name>[1.6_trade_prices_tokyo(2020).csv]</parent-name>
+            <remote-alias>最寄駅：名称</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>最寄駅：距離（分）</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[最寄駅：距離（分）]</local-name>
+            <parent-name>[1.6_trade_prices_tokyo(2020).csv]</parent-name>
+            <remote-alias>最寄駅：距離（分）</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>成交價格（總額）</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[成交價格（總額）]</local-name>
+            <parent-name>[1.6_trade_prices_tokyo(2020).csv]</parent-name>
+            <remote-alias>成交價格（總額）</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>坪單價</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[坪單價]</local-name>
+            <parent-name>[1.6_trade_prices_tokyo(2020).csv]</parent-name>
+            <remote-alias>坪單價</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>間取り</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[間取り]</local-name>
+            <parent-name>[1.6_trade_prices_tokyo(2020).csv]</parent-name>
+            <remote-alias>間取り</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>面積（㎡）</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[面積（㎡）]</local-name>
+            <parent-name>[1.6_trade_prices_tokyo(2020).csv]</parent-name>
+            <remote-alias>面積（㎡）</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>成交價格（㎡單價）</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[成交價格（㎡單價）]</local-name>
+            <parent-name>[1.6_trade_prices_tokyo(2020).csv]</parent-name>
+            <remote-alias>成交價格（㎡單價）</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>土地の形状</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[土地の形状]</local-name>
+            <parent-name>[1.6_trade_prices_tokyo(2020).csv]</parent-name>
+            <remote-alias>土地の形状</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>間口</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[間口]</local-name>
+            <parent-name>[1.6_trade_prices_tokyo(2020).csv]</parent-name>
+            <remote-alias>間口</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>延床面積（㎡）</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[延床面積（㎡）]</local-name>
+            <parent-name>[1.6_trade_prices_tokyo(2020).csv]</parent-name>
+            <remote-alias>延床面積（㎡）</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>建築年</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[建築年]</local-name>
+            <parent-name>[1.6_trade_prices_tokyo(2020).csv]</parent-name>
+            <remote-alias>建築年</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>建物の構造</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[建物の構造]</local-name>
+            <parent-name>[1.6_trade_prices_tokyo(2020).csv]</parent-name>
+            <remote-alias>建物の構造</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>用途</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[用途]</local-name>
+            <parent-name>[1.6_trade_prices_tokyo(2020).csv]</parent-name>
+            <remote-alias>用途</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>未來的用途</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[未來的用途]</local-name>
+            <parent-name>[1.6_trade_prices_tokyo(2020).csv]</parent-name>
+            <remote-alias>未來的用途</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>前面道路：方位</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[前面道路：方位]</local-name>
+            <parent-name>[1.6_trade_prices_tokyo(2020).csv]</parent-name>
+            <remote-alias>前面道路：方位</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>前面道路：種類</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[前面道路：種類]</local-name>
+            <parent-name>[1.6_trade_prices_tokyo(2020).csv]</parent-name>
+            <remote-alias>前面道路：種類</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>前面道路：幅員（ｍ）</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[前面道路：幅員（ｍ）]</local-name>
+            <parent-name>[1.6_trade_prices_tokyo(2020).csv]</parent-name>
+            <remote-alias>前面道路：幅員（ｍ）</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>都市計画</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[都市計画]</local-name>
+            <parent-name>[1.6_trade_prices_tokyo(2020).csv]</parent-name>
+            <remote-alias>都市計画</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>建ぺい率（％）</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[建ぺい率（％）]</local-name>
+            <parent-name>[1.6_trade_prices_tokyo(2020).csv]</parent-name>
+            <remote-alias>建ぺい率（％）</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>容積率（％）</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[容積率（％）]</local-name>
+            <parent-name>[1.6_trade_prices_tokyo(2020).csv]</parent-name>
+            <remote-alias>容積率（％）</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>取引時点</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[取引時点]</local-name>
+            <parent-name>[1.6_trade_prices_tokyo(2020).csv]</parent-name>
+            <remote-alias>取引時点</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>改装</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[改装]</local-name>
+            <parent-name>[1.6_trade_prices_tokyo(2020).csv]</parent-name>
+            <remote-alias>改装</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>取引の事情等</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[取引の事情等]</local-name>
+            <parent-name>[1.6_trade_prices_tokyo(2020).csv]</parent-name>
+            <remote-alias>取引の事情等</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='1.6_population_tokyo(2020).csv' datatype='table' name='[__tableau_internal_object_id__].[1.6_population_tokyo(2020).csv_868EC77B114040269392EC5544B11A9A]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='1.6_trade_prices_tokyo(2020).csv' datatype='table' name='[__tableau_internal_object_id__].[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]' role='measure' type='quantitative' />
+      <column caption='前面道路：幅員（Ｍ）' datatype='real' name='[前面道路：幅員（ｍ）]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='zh_TW' class='hyper' dbname='C:/Users/user/AppData/Local/Temp/TableauTemp/#TableauTemp_0wlrgjz00rd0sl17lmetc1cpgk06.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/13/2024 07:29:31 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='1.6_population_tokyo(2020).csv_868EC77B114040269392EC5544B11A9A' table='[Extract].[1.6_population_tokyo(2020).csv_868EC77B114040269392EC5544B11A9A]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+            <relation name='1.6_population_tokyo(2020).csv_868EC77B114040269392EC5544B11A9A' table='[Extract].[1.6_population_tokyo(2020).csv_868EC77B114040269392EC5544B11A9A]' type='table' />
+            <relation name='1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15' table='[Extract].[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]' type='table' />
+          </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>郵遞區號</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[郵遞區號]</local-name>
+              <parent-name>[1.6_population_tokyo(2020).csv_868EC77B114040269392EC5544B11A9A]</parent-name>
+              <remote-alias>郵遞區號</remote-alias>
+              <ordinal>0</ordinal>
+              <family>1.6_population_tokyo(2020).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>62</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_population_tokyo(2020).csv_868EC77B114040269392EC5544B11A9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>地區</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[地區]</local-name>
+              <parent-name>[1.6_population_tokyo(2020).csv_868EC77B114040269392EC5544B11A9A]</parent-name>
+              <remote-alias>地區</remote-alias>
+              <ordinal>1</ordinal>
+              <family>1.6_population_tokyo(2020).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>62</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_population_tokyo(2020).csv_868EC77B114040269392EC5544B11A9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>面積（平方公里）</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[面積（平方公里）]</local-name>
+              <parent-name>[1.6_population_tokyo(2020).csv_868EC77B114040269392EC5544B11A9A]</parent-name>
+              <remote-alias>面積（平方公里）</remote-alias>
+              <ordinal>2</ordinal>
+              <family>1.6_population_tokyo(2020).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>61</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_population_tokyo(2020).csv_868EC77B114040269392EC5544B11A9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>人口／總數（人）</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[人口／總數（人）]</local-name>
+              <parent-name>[1.6_population_tokyo(2020).csv_868EC77B114040269392EC5544B11A9A]</parent-name>
+              <remote-alias>人口／總數（人）</remote-alias>
+              <ordinal>3</ordinal>
+              <family>1.6_population_tokyo(2020).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>62</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_population_tokyo(2020).csv_868EC77B114040269392EC5544B11A9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>人口／男（人）</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[人口／男（人）]</local-name>
+              <parent-name>[1.6_population_tokyo(2020).csv_868EC77B114040269392EC5544B11A9A]</parent-name>
+              <remote-alias>人口／男（人）</remote-alias>
+              <ordinal>4</ordinal>
+              <family>1.6_population_tokyo(2020).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>62</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_population_tokyo(2020).csv_868EC77B114040269392EC5544B11A9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>人口／女（人）</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[人口／女（人）]</local-name>
+              <parent-name>[1.6_population_tokyo(2020).csv_868EC77B114040269392EC5544B11A9A]</parent-name>
+              <remote-alias>人口／女（人）</remote-alias>
+              <ordinal>5</ordinal>
+              <family>1.6_population_tokyo(2020).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>62</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_population_tokyo(2020).csv_868EC77B114040269392EC5544B11A9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>65歲以上人口比例（％）</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[65歲以上人口比例（％）]</local-name>
+              <parent-name>[1.6_population_tokyo(2020).csv_868EC77B114040269392EC5544B11A9A]</parent-name>
+              <remote-alias>65歲以上人口比例（％）</remote-alias>
+              <ordinal>6</ordinal>
+              <family>1.6_population_tokyo(2020).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>61</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_population_tokyo(2020).csv_868EC77B114040269392EC5544B11A9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>（參考）戶數（戶）</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[（參考）戶數（戶）]</local-name>
+              <parent-name>[1.6_population_tokyo(2020).csv_868EC77B114040269392EC5544B11A9A]</parent-name>
+              <remote-alias>（參考）戶數（戶）</remote-alias>
+              <ordinal>7</ordinal>
+              <family>1.6_population_tokyo(2020).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>62</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_population_tokyo(2020).csv_868EC77B114040269392EC5544B11A9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>小學兒童人數（人）</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[小學兒童人數（人）]</local-name>
+              <parent-name>[1.6_population_tokyo(2020).csv_868EC77B114040269392EC5544B11A9A]</parent-name>
+              <remote-alias>小學兒童人數（人）</remote-alias>
+              <ordinal>8</ordinal>
+              <family>1.6_population_tokyo(2020).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>62</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_population_tokyo(2020).csv_868EC77B114040269392EC5544B11A9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>中學學生人數（人）</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[中學學生人數（人）]</local-name>
+              <parent-name>[1.6_population_tokyo(2020).csv_868EC77B114040269392EC5544B11A9A]</parent-name>
+              <remote-alias>中學學生人數（人）</remote-alias>
+              <ordinal>9</ordinal>
+              <family>1.6_population_tokyo(2020).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>61</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_population_tokyo(2020).csv_868EC77B114040269392EC5544B11A9A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>No</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[No]</local-name>
+              <parent-name>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</parent-name>
+              <remote-alias>No</remote-alias>
+              <ordinal>10</ordinal>
+              <family>1.6_trade_prices_tokyo(2020).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>29892</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>種類</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[種類]</local-name>
+              <parent-name>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</parent-name>
+              <remote-alias>種類</remote-alias>
+              <ordinal>11</ordinal>
+              <family>1.6_trade_prices_tokyo(2020).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>地域</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[地域]</local-name>
+              <parent-name>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</parent-name>
+              <remote-alias>地域</remote-alias>
+              <ordinal>12</ordinal>
+              <family>1.6_trade_prices_tokyo(2020).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>市區代碼</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[市區代碼]</local-name>
+              <parent-name>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</parent-name>
+              <remote-alias>市區代碼</remote-alias>
+              <ordinal>13</ordinal>
+              <family>1.6_trade_prices_tokyo(2020).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>65</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>都道府県名</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[都道府県名]</local-name>
+              <parent-name>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</parent-name>
+              <remote-alias>都道府県名</remote-alias>
+              <ordinal>14</ordinal>
+              <family>1.6_trade_prices_tokyo(2020).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>市区町村名</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[市区町村名]</local-name>
+              <parent-name>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</parent-name>
+              <remote-alias>市区町村名</remote-alias>
+              <ordinal>15</ordinal>
+              <family>1.6_trade_prices_tokyo(2020).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>65</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>地区名</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[地区名]</local-name>
+              <parent-name>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</parent-name>
+              <remote-alias>地区名</remote-alias>
+              <ordinal>16</ordinal>
+              <family>1.6_trade_prices_tokyo(2020).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2108</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>最寄駅：名称</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[最寄駅：名称]</local-name>
+              <parent-name>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</parent-name>
+              <remote-alias>最寄駅：名称</remote-alias>
+              <ordinal>17</ordinal>
+              <family>1.6_trade_prices_tokyo(2020).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>983</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>最寄駅：距離（分）</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[最寄駅：距離（分）]</local-name>
+              <parent-name>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</parent-name>
+              <remote-alias>最寄駅：距離（分）</remote-alias>
+              <ordinal>18</ordinal>
+              <family>1.6_trade_prices_tokyo(2020).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>34</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>成交價格（總額）</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[成交價格（總額）]</local-name>
+              <parent-name>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</parent-name>
+              <remote-alias>成交價格（總額）</remote-alias>
+              <ordinal>19</ordinal>
+              <family>1.6_trade_prices_tokyo(2020).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>386</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>坪單價</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[坪單價]</local-name>
+              <parent-name>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</parent-name>
+              <remote-alias>坪單價</remote-alias>
+              <ordinal>20</ordinal>
+              <family>1.6_trade_prices_tokyo(2020).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>271</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>間取り</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[間取り]</local-name>
+              <parent-name>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</parent-name>
+              <remote-alias>間取り</remote-alias>
+              <ordinal>21</ordinal>
+              <family>1.6_trade_prices_tokyo(2020).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>面積（㎡）</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[面積（㎡）]</local-name>
+              <parent-name>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</parent-name>
+              <remote-alias>面積（㎡）</remote-alias>
+              <ordinal>22</ordinal>
+              <family>1.6_trade_prices_tokyo(2020).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>161</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>成交價格（㎡單價）</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[成交價格（㎡單價）]</local-name>
+              <parent-name>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</parent-name>
+              <remote-alias>成交價格（㎡單價）</remote-alias>
+              <ordinal>23</ordinal>
+              <family>1.6_trade_prices_tokyo(2020).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>304</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>土地の形状</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[土地の形状]</local-name>
+              <parent-name>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</parent-name>
+              <remote-alias>土地の形状</remote-alias>
+              <ordinal>24</ordinal>
+              <family>1.6_trade_prices_tokyo(2020).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>間口</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[間口]</local-name>
+              <parent-name>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</parent-name>
+              <remote-alias>間口</remote-alias>
+              <ordinal>25</ordinal>
+              <family>1.6_trade_prices_tokyo(2020).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>306</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>延床面積（㎡）</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[延床面積（㎡）]</local-name>
+              <parent-name>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</parent-name>
+              <remote-alias>延床面積（㎡）</remote-alias>
+              <ordinal>26</ordinal>
+              <family>1.6_trade_prices_tokyo(2020).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>140</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>建築年</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[建築年]</local-name>
+              <parent-name>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</parent-name>
+              <remote-alias>建築年</remote-alias>
+              <ordinal>27</ordinal>
+              <family>1.6_trade_prices_tokyo(2020).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>88</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>建物の構造</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[建物の構造]</local-name>
+              <parent-name>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</parent-name>
+              <remote-alias>建物の構造</remote-alias>
+              <ordinal>28</ordinal>
+              <family>1.6_trade_prices_tokyo(2020).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>用途</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[用途]</local-name>
+              <parent-name>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</parent-name>
+              <remote-alias>用途</remote-alias>
+              <ordinal>29</ordinal>
+              <family>1.6_trade_prices_tokyo(2020).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>98</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>未來的用途</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[未來的用途]</local-name>
+              <parent-name>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</parent-name>
+              <remote-alias>未來的用途</remote-alias>
+              <ordinal>30</ordinal>
+              <family>1.6_trade_prices_tokyo(2020).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>前面道路：方位</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[前面道路：方位]</local-name>
+              <parent-name>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</parent-name>
+              <remote-alias>前面道路：方位</remote-alias>
+              <ordinal>31</ordinal>
+              <family>1.6_trade_prices_tokyo(2020).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>前面道路：種類</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[前面道路：種類]</local-name>
+              <parent-name>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</parent-name>
+              <remote-alias>前面道路：種類</remote-alias>
+              <ordinal>32</ordinal>
+              <family>1.6_trade_prices_tokyo(2020).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>前面道路：幅員（ｍ）</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[前面道路：幅員（ｍ）]</local-name>
+              <parent-name>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</parent-name>
+              <remote-alias>前面道路：幅員（ｍ）</remote-alias>
+              <ordinal>33</ordinal>
+              <family>1.6_trade_prices_tokyo(2020).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>237</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>都市計画</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[都市計画]</local-name>
+              <parent-name>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</parent-name>
+              <remote-alias>都市計画</remote-alias>
+              <ordinal>34</ordinal>
+              <family>1.6_trade_prices_tokyo(2020).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>建ぺい率（％）</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[建ぺい率（％）]</local-name>
+              <parent-name>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</parent-name>
+              <remote-alias>建ぺい率（％）</remote-alias>
+              <ordinal>35</ordinal>
+              <family>1.6_trade_prices_tokyo(2020).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>容積率（％）</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[容積率（％）]</local-name>
+              <parent-name>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</parent-name>
+              <remote-alias>容積率（％）</remote-alias>
+              <ordinal>36</ordinal>
+              <family>1.6_trade_prices_tokyo(2020).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>取引時点</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[取引時点]</local-name>
+              <parent-name>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</parent-name>
+              <remote-alias>取引時点</remote-alias>
+              <ordinal>37</ordinal>
+              <family>1.6_trade_prices_tokyo(2020).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>改装</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[改装]</local-name>
+              <parent-name>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</parent-name>
+              <remote-alias>改装</remote-alias>
+              <ordinal>38</ordinal>
+              <family>1.6_trade_prices_tokyo(2020).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>取引の事情等</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[取引の事情等]</local-name>
+              <parent-name>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</parent-name>
+              <remote-alias>取引の事情等</remote-alias>
+              <ordinal>39</ordinal>
+              <family>1.6_trade_prices_tokyo(2020).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Taiwan&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='1.6_population_tokyo(2020).csv' id='1.6_population_tokyo(2020).csv_868EC77B114040269392EC5544B11A9A'>
+            <properties context=''>
+              <relation connection='textscan.05stnuf1p6encb108z0k70duyxa9' name='1.6_population_tokyo(2020).csv' table='[1.6_population_tokyo(2020)#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='zh_TW' separator=','>
+                  <column datatype='integer' name='郵遞區號' ordinal='0' />
+                  <column datatype='string' name='地區' ordinal='1' />
+                  <column datatype='real' name='面積（平方公里）' ordinal='2' />
+                  <column datatype='integer' name='人口／總數（人）' ordinal='3' />
+                  <column datatype='integer' name='人口／男（人）' ordinal='4' />
+                  <column datatype='integer' name='人口／女（人）' ordinal='5' />
+                  <column datatype='real' name='65歲以上人口比例（％）' ordinal='6' />
+                  <column datatype='integer' name='（參考）戶數（戶）' ordinal='7' />
+                  <column datatype='integer' name='小學兒童人數（人）' ordinal='8' />
+                  <column datatype='integer' name='中學學生人數（人）' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='1.6_population_tokyo(2020).csv_868EC77B114040269392EC5544B11A9A' table='[Extract].[1.6_population_tokyo(2020).csv_868EC77B114040269392EC5544B11A9A]' type='table' />
+            </properties>
+          </object>
+          <object caption='1.6_trade_prices_tokyo(2020).csv' id='1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15'>
+            <properties context=''>
+              <relation connection='textscan.05stnuf1p6encb108z0k70duyxa9' name='1.6_trade_prices_tokyo(2020).csv' table='[1.6_trade_prices_tokyo(2020)#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='zh_TW' separator=','>
+                  <column datatype='integer' name='No' ordinal='0' />
+                  <column datatype='string' name='種類' ordinal='1' />
+                  <column datatype='string' name='地域' ordinal='2' />
+                  <column datatype='integer' name='市區代碼' ordinal='3' />
+                  <column datatype='string' name='都道府県名' ordinal='4' />
+                  <column datatype='string' name='市区町村名' ordinal='5' />
+                  <column datatype='string' name='地区名' ordinal='6' />
+                  <column datatype='string' name='最寄駅：名称' ordinal='7' />
+                  <column datatype='integer' name='最寄駅：距離（分）' ordinal='8' />
+                  <column datatype='integer' name='成交價格（總額）' ordinal='9' />
+                  <column datatype='integer' name='坪單價' ordinal='10' />
+                  <column datatype='string' name='間取り' ordinal='11' />
+                  <column datatype='integer' name='面積（㎡）' ordinal='12' />
+                  <column datatype='integer' name='成交價格（㎡單價）' ordinal='13' />
+                  <column datatype='string' name='土地の形状' ordinal='14' />
+                  <column datatype='real' name='間口' ordinal='15' />
+                  <column datatype='integer' name='延床面積（㎡）' ordinal='16' />
+                  <column datatype='string' name='建築年' ordinal='17' />
+                  <column datatype='string' name='建物の構造' ordinal='18' />
+                  <column datatype='string' name='用途' ordinal='19' />
+                  <column datatype='string' name='未來的用途' ordinal='20' />
+                  <column datatype='string' name='前面道路：方位' ordinal='21' />
+                  <column datatype='string' name='前面道路：種類' ordinal='22' />
+                  <column datatype='real' name='前面道路：幅員（ｍ）' ordinal='23' />
+                  <column datatype='string' name='都市計画' ordinal='24' />
+                  <column datatype='integer' name='建ぺい率（％）' ordinal='25' />
+                  <column datatype='integer' name='容積率（％）' ordinal='26' />
+                  <column datatype='string' name='取引時点' ordinal='27' />
+                  <column datatype='string' name='改装' ordinal='28' />
+                  <column datatype='string' name='取引の事情等' ordinal='29' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15' table='[Extract].[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[郵遞區號]' />
+              <expression op='[市區代碼]' />
+            </expression>
+            <first-end-point object-id='1.6_population_tokyo(2020).csv_868EC77B114040269392EC5544B11A9A' />
+            <second-end-point object-id='1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='工作表 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='微軟正黑體' fontsize='16'>東京都的不動產平均價格與65歲以上人口比例的相關性</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='1.6_population_tokyo(2020)+' name='federated.10k287709pm5yf1289xfx1rtgca0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10k287709pm5yf1289xfx1rtgca0'>
+            <_.fcp.ObjectModelTableType.false...column caption='1.6_trade_prices_tokyo(2020).csv' datatype='integer' name='[__tableau_internal_object_id__].[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]' role='measure' type='quantitative' />
+            <column datatype='real' name='[65歲以上人口比例（％）]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='1.6_trade_prices_tokyo(2020).csv' datatype='table' name='[__tableau_internal_object_id__].[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[65歲以上人口比例（％）]' derivation='Avg' name='[avg:65歲以上人口比例（％）:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[成交價格（總額）]' derivation='Avg' name='[avg:成交價格（總額）:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[市区町村名]' derivation='None' name='[none:市区町村名:nk]' pivot='key' type='nominal' />
+            <column-instance column='[未來的用途]' derivation='None' name='[none:未來的用途:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[市区町村名]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[成交價格（總額）]' role='measure' type='quantitative' />
+            <column datatype='string' name='[未來的用途]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10k287709pm5yf1289xfx1rtgca0].[none:未來的用途:nk]'>
+            <groupfilter function='member' level='[none:未來的用途:nk]' member='&quot;住宅&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.10k287709pm5yf1289xfx1rtgca0].[none:未來的用途:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <size column='[federated.10k287709pm5yf1289xfx1rtgca0].[__tableau_internal_object_id__].[cnt:1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15:qk]' />
+              <text column='[federated.10k287709pm5yf1289xfx1rtgca0].[none:市区町村名:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='exp' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#ffaa00' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#f28e2b' />
+                <format attr='mark-transparency' value='75' />
+                <format attr='size' value='1.2413811683654785' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.10k287709pm5yf1289xfx1rtgca0].[avg:成交價格（總額）:qk]</rows>
+        <cols>[federated.10k287709pm5yf1289xfx1rtgca0].[avg:65歲以上人口比例（％）:qk]</cols>
+      </table>
+      <simple-id uuid='{115B19F1-AE07-47D5-ACEE-E7352F7AEB29}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='工作表 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.10k287709pm5yf1289xfx1rtgca0].[__tableau_internal_object_id__].[cnt:1.6_trade_prices_tokyo(2020).csv_3B81EF10D9614601AD05D539E40CED15:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.10k287709pm5yf1289xfx1rtgca0].[none:市区町村名:nk]</field>
+            <field>[federated.10k287709pm5yf1289xfx1rtgca0].[none:未來的用途:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9ECB5F38-2109-401C-BA2A-7B28BC4B499E}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='工作表 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
