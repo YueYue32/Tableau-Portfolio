@@ -1,0 +1,1643 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0425.1340                               -->
+<workbook original-version='18.1' source-build='2024.1.2 (20241.24.0425.1340)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='01' inline='true' name='federated.1x3uahf0yh3z81104oojb167ug0z' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='01' name='textscan.1patijr0kuhogu1fjzait1sw7q7k'>
+            <connection class='textscan' directory='C:/Users/user/Desktop/Chap01/1.9_trade_prices' filename='01.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation all='true' connection='textscan.1patijr0kuhogu1fjzait1sw7q7k' include-siblings='false' is-recursive='false' name='01.csv+' path='' type='batch-union'>
+          <database-filter />
+          <table-filter />
+          <columns character-set='UTF-8' header='yes' locale='zh_TW' separator=','>
+            <column datatype='integer' name='No' />
+            <column datatype='string' name='Type' />
+            <column datatype='string' name='Region' />
+            <column datatype='integer' name='MunicipalityCode' />
+            <column datatype='string' name='Prefecture' />
+            <column datatype='string' name='Municipality' />
+            <column datatype='string' name='DistrictName' />
+            <column datatype='string' name='NearestStation' />
+            <column datatype='string' name='TimeToNearestStation' />
+            <column datatype='integer' name='MinTimeToNearestStation' />
+            <column datatype='integer' name='MaxTimeToNearestStation' />
+            <column datatype='integer' name='TradePrice' />
+            <column datatype='string' name='FloorPlan' />
+            <column datatype='integer' name='Area' />
+            <column datatype='integer' name='AreaIsGreaterFlag' />
+            <column datatype='real' name='UnitPrice' />
+            <column datatype='real' name='PricePerTsubo' />
+            <column datatype='string' name='LandShape' />
+            <column datatype='real' name='Frontage' />
+            <column datatype='boolean' name='FrontageIsGreaterFlag' />
+            <column datatype='integer' name='TotalFloorArea' />
+            <column datatype='integer' name='TotalFloorAreaIsGreaterFlag' />
+            <column datatype='integer' name='BuildingYear' />
+            <column datatype='integer' name='PrewarBuilding' />
+            <column datatype='string' name='Structure' />
+            <column datatype='string' name='Use' />
+            <column datatype='string' name='Purpose' />
+            <column datatype='string' name='Direction' />
+            <column datatype='string' name='Classification' />
+            <column datatype='real' name='Breadth' />
+            <column datatype='string' name='CityPlanning' />
+            <column datatype='real' name='CoverageRatio' />
+            <column datatype='real' name='FloorAreaRatio' />
+            <column datatype='string' name='Period' />
+            <column datatype='integer' name='Year' />
+            <column datatype='integer' name='Quarter' />
+            <column datatype='string' name='Renovation' />
+            <column datatype='string' name='Remarks' />
+            <column datatype='string' name='Path' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation all='true' connection='textscan.1patijr0kuhogu1fjzait1sw7q7k' include-siblings='false' is-recursive='false' name='01.csv+' path='' type='batch-union'>
+          <database-filter />
+          <table-filter />
+          <columns character-set='UTF-8' header='yes' locale='zh_TW' separator=','>
+            <column datatype='integer' name='No' />
+            <column datatype='string' name='Type' />
+            <column datatype='string' name='Region' />
+            <column datatype='integer' name='MunicipalityCode' />
+            <column datatype='string' name='Prefecture' />
+            <column datatype='string' name='Municipality' />
+            <column datatype='string' name='DistrictName' />
+            <column datatype='string' name='NearestStation' />
+            <column datatype='string' name='TimeToNearestStation' />
+            <column datatype='integer' name='MinTimeToNearestStation' />
+            <column datatype='integer' name='MaxTimeToNearestStation' />
+            <column datatype='integer' name='TradePrice' />
+            <column datatype='string' name='FloorPlan' />
+            <column datatype='integer' name='Area' />
+            <column datatype='integer' name='AreaIsGreaterFlag' />
+            <column datatype='real' name='UnitPrice' />
+            <column datatype='real' name='PricePerTsubo' />
+            <column datatype='string' name='LandShape' />
+            <column datatype='real' name='Frontage' />
+            <column datatype='boolean' name='FrontageIsGreaterFlag' />
+            <column datatype='integer' name='TotalFloorArea' />
+            <column datatype='integer' name='TotalFloorAreaIsGreaterFlag' />
+            <column datatype='integer' name='BuildingYear' />
+            <column datatype='integer' name='PrewarBuilding' />
+            <column datatype='string' name='Structure' />
+            <column datatype='string' name='Use' />
+            <column datatype='string' name='Purpose' />
+            <column datatype='string' name='Direction' />
+            <column datatype='string' name='Classification' />
+            <column datatype='real' name='Breadth' />
+            <column datatype='string' name='CityPlanning' />
+            <column datatype='real' name='CoverageRatio' />
+            <column datatype='real' name='FloorAreaRatio' />
+            <column datatype='string' name='Period' />
+            <column datatype='integer' name='Year' />
+            <column datatype='integer' name='Quarter' />
+            <column datatype='string' name='Renovation' />
+            <column datatype='string' name='Remarks' />
+            <column datatype='string' name='Path' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[01.csv+]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>No</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[No]</local-name>
+            <parent-name>[01.csv+]</parent-name>
+            <remote-alias>No</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Type]</local-name>
+            <parent-name>[01.csv+]</parent-name>
+            <remote-alias>Type</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[01.csv+]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MunicipalityCode</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MunicipalityCode]</local-name>
+            <parent-name>[01.csv+]</parent-name>
+            <remote-alias>MunicipalityCode</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Prefecture</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Prefecture]</local-name>
+            <parent-name>[01.csv+]</parent-name>
+            <remote-alias>Prefecture</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Municipality</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Municipality]</local-name>
+            <parent-name>[01.csv+]</parent-name>
+            <remote-alias>Municipality</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DistrictName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DistrictName]</local-name>
+            <parent-name>[01.csv+]</parent-name>
+            <remote-alias>DistrictName</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NearestStation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NearestStation]</local-name>
+            <parent-name>[01.csv+]</parent-name>
+            <remote-alias>NearestStation</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TimeToNearestStation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TimeToNearestStation]</local-name>
+            <parent-name>[01.csv+]</parent-name>
+            <remote-alias>TimeToNearestStation</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MinTimeToNearestStation</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MinTimeToNearestStation]</local-name>
+            <parent-name>[01.csv+]</parent-name>
+            <remote-alias>MinTimeToNearestStation</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MaxTimeToNearestStation</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MaxTimeToNearestStation]</local-name>
+            <parent-name>[01.csv+]</parent-name>
+            <remote-alias>MaxTimeToNearestStation</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TradePrice</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TradePrice]</local-name>
+            <parent-name>[01.csv+]</parent-name>
+            <remote-alias>TradePrice</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FloorPlan</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FloorPlan]</local-name>
+            <parent-name>[01.csv+]</parent-name>
+            <remote-alias>FloorPlan</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Area</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Area]</local-name>
+            <parent-name>[01.csv+]</parent-name>
+            <remote-alias>Area</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AreaIsGreaterFlag</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AreaIsGreaterFlag]</local-name>
+            <parent-name>[01.csv+]</parent-name>
+            <remote-alias>AreaIsGreaterFlag</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UnitPrice</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[UnitPrice]</local-name>
+            <parent-name>[01.csv+]</parent-name>
+            <remote-alias>UnitPrice</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PricePerTsubo</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PricePerTsubo]</local-name>
+            <parent-name>[01.csv+]</parent-name>
+            <remote-alias>PricePerTsubo</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LandShape</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LandShape]</local-name>
+            <parent-name>[01.csv+]</parent-name>
+            <remote-alias>LandShape</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Frontage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Frontage]</local-name>
+            <parent-name>[01.csv+]</parent-name>
+            <remote-alias>Frontage</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FrontageIsGreaterFlag</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[FrontageIsGreaterFlag]</local-name>
+            <parent-name>[01.csv+]</parent-name>
+            <remote-alias>FrontageIsGreaterFlag</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalFloorArea</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalFloorArea]</local-name>
+            <parent-name>[01.csv+]</parent-name>
+            <remote-alias>TotalFloorArea</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalFloorAreaIsGreaterFlag</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalFloorAreaIsGreaterFlag]</local-name>
+            <parent-name>[01.csv+]</parent-name>
+            <remote-alias>TotalFloorAreaIsGreaterFlag</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BuildingYear</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BuildingYear]</local-name>
+            <parent-name>[01.csv+]</parent-name>
+            <remote-alias>BuildingYear</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PrewarBuilding</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PrewarBuilding]</local-name>
+            <parent-name>[01.csv+]</parent-name>
+            <remote-alias>PrewarBuilding</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Structure</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Structure]</local-name>
+            <parent-name>[01.csv+]</parent-name>
+            <remote-alias>Structure</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Use</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Use]</local-name>
+            <parent-name>[01.csv+]</parent-name>
+            <remote-alias>Use</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Purpose</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Purpose]</local-name>
+            <parent-name>[01.csv+]</parent-name>
+            <remote-alias>Purpose</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Direction</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Direction]</local-name>
+            <parent-name>[01.csv+]</parent-name>
+            <remote-alias>Direction</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Classification</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Classification]</local-name>
+            <parent-name>[01.csv+]</parent-name>
+            <remote-alias>Classification</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Breadth</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Breadth]</local-name>
+            <parent-name>[01.csv+]</parent-name>
+            <remote-alias>Breadth</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CityPlanning</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CityPlanning]</local-name>
+            <parent-name>[01.csv+]</parent-name>
+            <remote-alias>CityPlanning</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CoverageRatio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CoverageRatio]</local-name>
+            <parent-name>[01.csv+]</parent-name>
+            <remote-alias>CoverageRatio</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FloorAreaRatio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[FloorAreaRatio]</local-name>
+            <parent-name>[01.csv+]</parent-name>
+            <remote-alias>FloorAreaRatio</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Period</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Period]</local-name>
+            <parent-name>[01.csv+]</parent-name>
+            <remote-alias>Period</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[01.csv+]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quarter</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Quarter]</local-name>
+            <parent-name>[01.csv+]</parent-name>
+            <remote-alias>Quarter</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Renovation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Renovation]</local-name>
+            <parent-name>[01.csv+]</parent-name>
+            <remote-alias>Renovation</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Remarks</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Remarks]</local-name>
+            <parent-name>[01.csv+]</parent-name>
+            <remote-alias>Remarks</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Path</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Path]</local-name>
+            <parent-name>[01.csv+]</parent-name>
+            <remote-alias>Path</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Area Is Greater Flag' datatype='integer' name='[AreaIsGreaterFlag]' role='measure' type='quantitative' />
+      <column caption='Building Year' datatype='integer' name='[BuildingYear]' role='dimension' type='quantitative' />
+      <column caption='City Planning' datatype='string' name='[CityPlanning]' role='dimension' type='nominal' />
+      <column caption='Coverage Ratio' datatype='real' name='[CoverageRatio]' role='measure' type='quantitative' />
+      <column caption='District Name' datatype='string' name='[DistrictName]' role='dimension' type='nominal' />
+      <column caption='Floor Area Ratio' datatype='real' name='[FloorAreaRatio]' role='measure' type='quantitative' />
+      <column caption='Floor Plan' datatype='string' name='[FloorPlan]' role='dimension' type='nominal' />
+      <column caption='Frontage Is Greater Flag' datatype='boolean' name='[FrontageIsGreaterFlag]' role='dimension' type='nominal' />
+      <column caption='Land Shape' datatype='string' name='[LandShape]' role='dimension' type='nominal' />
+      <column caption='Max Time To Nearest Station' datatype='integer' name='[MaxTimeToNearestStation]' role='measure' type='quantitative' />
+      <column caption='Min Time To Nearest Station' datatype='integer' name='[MinTimeToNearestStation]' role='measure' type='quantitative' />
+      <column caption='Municipality Code' datatype='integer' name='[MunicipalityCode]' role='dimension' type='ordinal' />
+      <column caption='Nearest Station' datatype='string' name='[NearestStation]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Prefecture]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Prewar Building' datatype='integer' name='[PrewarBuilding]' role='measure' type='quantitative' />
+      <column caption='Price Per Tsubo' datatype='real' name='[PricePerTsubo]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Quarter]' role='dimension' type='quantitative' />
+      <column caption='Time To Nearest Station' datatype='string' default-role='measure' default-type='ordinal' name='[TimeToNearestStation]' role='dimension' type='nominal' />
+      <column caption='Total Floor Area Is Greater Flag' datatype='integer' name='[TotalFloorAreaIsGreaterFlag]' role='measure' type='quantitative' />
+      <column caption='Total Floor Area' datatype='integer' name='[TotalFloorArea]' role='measure' type='quantitative' />
+      <column caption='Trade Price' datatype='integer' name='[TradePrice]' role='measure' type='quantitative' />
+      <column caption='Unit Price' datatype='real' name='[UnitPrice]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='01.csv' datatype='table' name='[__tableau_internal_object_id__].[01.csv_9B99D603F17C41C982031E1E684C3EAF]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='zh_TW' class='hyper' dbname='C:/Users/user/AppData/Local/Temp/TableauTemp/#TableauTemp_11nf5y40x13hys119yksk08p8lcg.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/14/2024 09:29:29 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>No</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[No]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>No</remote-alias>
+              <ordinal>0</ordinal>
+              <family>01.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>725498</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Type</remote-alias>
+              <ordinal>1</ordinal>
+              <family>01.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Region</remote-alias>
+              <ordinal>2</ordinal>
+              <family>01.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MunicipalityCode</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[MunicipalityCode]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MunicipalityCode</remote-alias>
+              <ordinal>3</ordinal>
+              <family>01.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3921</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Prefecture</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Prefecture]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Prefecture</remote-alias>
+              <ordinal>4</ordinal>
+              <family>01.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>47</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Municipality</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Municipality]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Municipality</remote-alias>
+              <ordinal>5</ordinal>
+              <family>01.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3905</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DistrictName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[DistrictName]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DistrictName</remote-alias>
+              <ordinal>6</ordinal>
+              <family>01.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>139411</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NearestStation</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[NearestStation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NearestStation</remote-alias>
+              <ordinal>7</ordinal>
+              <family>01.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>23751</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TimeToNearestStation</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[TimeToNearestStation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TimeToNearestStation</remote-alias>
+              <ordinal>8</ordinal>
+              <family>01.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>35</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MinTimeToNearestStation</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[MinTimeToNearestStation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MinTimeToNearestStation</remote-alias>
+              <ordinal>9</ordinal>
+              <family>01.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>35</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MaxTimeToNearestStation</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[MaxTimeToNearestStation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MaxTimeToNearestStation</remote-alias>
+              <ordinal>10</ordinal>
+              <family>01.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>34</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TradePrice</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[TradePrice]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TradePrice</remote-alias>
+              <ordinal>11</ordinal>
+              <family>01.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>981</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FloorPlan</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[FloorPlan]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FloorPlan</remote-alias>
+              <ordinal>12</ordinal>
+              <family>01.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Area</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Area]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Area</remote-alias>
+              <ordinal>13</ordinal>
+              <family>01.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>159</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>AreaIsGreaterFlag</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[AreaIsGreaterFlag]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>AreaIsGreaterFlag</remote-alias>
+              <ordinal>14</ordinal>
+              <family>01.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>UnitPrice</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[UnitPrice]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>UnitPrice</remote-alias>
+              <ordinal>15</ordinal>
+              <family>01.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>886</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PricePerTsubo</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PricePerTsubo]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PricePerTsubo</remote-alias>
+              <ordinal>16</ordinal>
+              <family>01.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>842</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LandShape</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[LandShape]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LandShape</remote-alias>
+              <ordinal>17</ordinal>
+              <family>01.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Frontage</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Frontage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Frontage</remote-alias>
+              <ordinal>18</ordinal>
+              <family>01.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>987</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FrontageIsGreaterFlag</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[FrontageIsGreaterFlag]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FrontageIsGreaterFlag</remote-alias>
+              <ordinal>19</ordinal>
+              <family>01.csv+</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TotalFloorArea</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[TotalFloorArea]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TotalFloorArea</remote-alias>
+              <ordinal>20</ordinal>
+              <family>01.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>177</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TotalFloorAreaIsGreaterFlag</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[TotalFloorAreaIsGreaterFlag]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TotalFloorAreaIsGreaterFlag</remote-alias>
+              <ordinal>21</ordinal>
+              <family>01.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BuildingYear</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[BuildingYear]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BuildingYear</remote-alias>
+              <ordinal>22</ordinal>
+              <family>01.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>114</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PrewarBuilding</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[PrewarBuilding]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PrewarBuilding</remote-alias>
+              <ordinal>23</ordinal>
+              <family>01.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Structure</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Structure]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Structure</remote-alias>
+              <ordinal>24</ordinal>
+              <family>01.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Use</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Use]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Use</remote-alias>
+              <ordinal>25</ordinal>
+              <family>01.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>165</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Purpose</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Purpose]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Purpose</remote-alias>
+              <ordinal>26</ordinal>
+              <family>01.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Direction</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Direction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Direction</remote-alias>
+              <ordinal>27</ordinal>
+              <family>01.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Classification</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Classification]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Classification</remote-alias>
+              <ordinal>28</ordinal>
+              <family>01.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Breadth</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Breadth]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Breadth</remote-alias>
+              <ordinal>29</ordinal>
+              <family>01.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>485</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CityPlanning</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CityPlanning]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CityPlanning</remote-alias>
+              <ordinal>30</ordinal>
+              <family>01.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CoverageRatio</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[CoverageRatio]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CoverageRatio</remote-alias>
+              <ordinal>31</ordinal>
+              <family>01.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FloorAreaRatio</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[FloorAreaRatio]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>FloorAreaRatio</remote-alias>
+              <ordinal>32</ordinal>
+              <family>01.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Period</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Period]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Period</remote-alias>
+              <ordinal>33</ordinal>
+              <family>01.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>57</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>34</ordinal>
+              <family>01.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Quarter</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Quarter]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Quarter</remote-alias>
+              <ordinal>35</ordinal>
+              <family>01.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Renovation</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Renovation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Renovation</remote-alias>
+              <ordinal>36</ordinal>
+              <family>01.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Remarks</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Remarks]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Remarks</remote-alias>
+              <ordinal>37</ordinal>
+              <family>01.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Path</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Path]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Path</remote-alias>
+              <ordinal>38</ordinal>
+              <family>01.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>47</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[01.csv_9B99D603F17C41C982031E1E684C3EAF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Taiwan&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='01.csv' id='01.csv_9B99D603F17C41C982031E1E684C3EAF'>
+            <properties context=''>
+              <relation all='true' connection='textscan.1patijr0kuhogu1fjzait1sw7q7k' include-siblings='false' is-recursive='false' name='01.csv+' path='' type='batch-union'>
+                <database-filter />
+                <table-filter />
+                <columns character-set='UTF-8' header='yes' locale='zh_TW' separator=','>
+                  <column datatype='integer' name='No' />
+                  <column datatype='string' name='Type' />
+                  <column datatype='string' name='Region' />
+                  <column datatype='integer' name='MunicipalityCode' />
+                  <column datatype='string' name='Prefecture' />
+                  <column datatype='string' name='Municipality' />
+                  <column datatype='string' name='DistrictName' />
+                  <column datatype='string' name='NearestStation' />
+                  <column datatype='string' name='TimeToNearestStation' />
+                  <column datatype='integer' name='MinTimeToNearestStation' />
+                  <column datatype='integer' name='MaxTimeToNearestStation' />
+                  <column datatype='integer' name='TradePrice' />
+                  <column datatype='string' name='FloorPlan' />
+                  <column datatype='integer' name='Area' />
+                  <column datatype='integer' name='AreaIsGreaterFlag' />
+                  <column datatype='real' name='UnitPrice' />
+                  <column datatype='real' name='PricePerTsubo' />
+                  <column datatype='string' name='LandShape' />
+                  <column datatype='real' name='Frontage' />
+                  <column datatype='boolean' name='FrontageIsGreaterFlag' />
+                  <column datatype='integer' name='TotalFloorArea' />
+                  <column datatype='integer' name='TotalFloorAreaIsGreaterFlag' />
+                  <column datatype='integer' name='BuildingYear' />
+                  <column datatype='integer' name='PrewarBuilding' />
+                  <column datatype='string' name='Structure' />
+                  <column datatype='string' name='Use' />
+                  <column datatype='string' name='Purpose' />
+                  <column datatype='string' name='Direction' />
+                  <column datatype='string' name='Classification' />
+                  <column datatype='real' name='Breadth' />
+                  <column datatype='string' name='CityPlanning' />
+                  <column datatype='real' name='CoverageRatio' />
+                  <column datatype='real' name='FloorAreaRatio' />
+                  <column datatype='string' name='Period' />
+                  <column datatype='integer' name='Year' />
+                  <column datatype='integer' name='Quarter' />
+                  <column datatype='string' name='Renovation' />
+                  <column datatype='string' name='Remarks' />
+                  <column datatype='string' name='Path' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='工作表 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='微軟正黑體' fontsize='16'>都道府縣的不動產價格與面積</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='01' name='federated.1x3uahf0yh3z81104oojb167ug0z' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1x3uahf0yh3z81104oojb167ug0z'>
+            <column datatype='integer' name='[Area]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Prefecture]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column caption='Trade Price' datatype='integer' name='[TradePrice]' role='measure' type='quantitative' />
+            <column-instance column='[TradePrice]' derivation='Avg' name='[avg:TradePrice:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Prefecture]' derivation='None' name='[none:Prefecture:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Area]' derivation='Sum' name='[sum:Area:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1x3uahf0yh3z81104oojb167ug0z].[none:Prefecture:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1x3uahf0yh3z81104oojb167ug0z].[avg:TradePrice:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1x3uahf0yh3z81104oojb167ug0z].[sum:Area:qk]' field-type='quantitative' fold='true' scope='cols' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1x3uahf0yh3z81104oojb167ug0z].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1x3uahf0yh3z81104oojb167ug0z].[avg:TradePrice:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1x3uahf0yh3z81104oojb167ug0z].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1x3uahf0yh3z81104oojb167ug0z].[sum:Area:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1x3uahf0yh3z81104oojb167ug0z].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1x3uahf0yh3z81104oojb167ug0z].[none:Prefecture:nk]</rows>
+        <cols>([federated.1x3uahf0yh3z81104oojb167ug0z].[avg:TradePrice:qk] + [federated.1x3uahf0yh3z81104oojb167ug0z].[sum:Area:qk])</cols>
+      </table>
+      <simple-id uuid='{822A8DA3-0996-4567-94D1-AD8978E1B210}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='工作表 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1x3uahf0yh3z81104oojb167ug0z].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1x3uahf0yh3z81104oojb167ug0z].[none:Prefecture:nk]</field>
+            <field>[federated.1x3uahf0yh3z81104oojb167ug0z].[sum:Area:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{7D9CBDF9-5AAA-4363-BD07-AEA83A3484A1}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='工作表 1' width='192'>
+      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
+      RK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>

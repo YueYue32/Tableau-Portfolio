@@ -1,0 +1,444 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0425.1340                               -->
+<workbook original-version='18.1' source-build='2024.1.2 (20241.24.0425.1340)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='1.10_emoji' inline='true' name='federated.08eyod20be905i1f21wfu0agffk2' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='1.10_emoji' name='textscan.0tx3fhf081kfqe17efshp1qjogyc'>
+            <connection class='textscan' directory='C:/Users/user/Desktop/Chap01' filename='1.10_emoji.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0tx3fhf081kfqe17efshp1qjogyc' name='1.10_emoji.csv' table='[1.10_emoji#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='zh_TW' separator=','>
+            <column datatype='string' name='emoji' ordinal='0' />
+            <column datatype='string' name='name' ordinal='1' />
+            <column datatype='string' name='group' ordinal='2' />
+            <column datatype='string' name='sub_group' ordinal='3' />
+            <column datatype='string' name='codepoints' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0tx3fhf081kfqe17efshp1qjogyc' name='1.10_emoji.csv' table='[1.10_emoji#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='zh_TW' separator=','>
+            <column datatype='string' name='emoji' ordinal='0' />
+            <column datatype='string' name='name' ordinal='1' />
+            <column datatype='string' name='group' ordinal='2' />
+            <column datatype='string' name='sub_group' ordinal='3' />
+            <column datatype='string' name='codepoints' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[1.10_emoji.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;zh_Hans_CN&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;zh_TW&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>emoji</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[emoji]</local-name>
+            <parent-name>[1.10_emoji.csv]</parent-name>
+            <remote-alias>emoji</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.10_emoji.csv_AFDDDB71A2964DB7B7444159E0D7CCB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[1.10_emoji.csv]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.10_emoji.csv_AFDDDB71A2964DB7B7444159E0D7CCB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[group]</local-name>
+            <parent-name>[1.10_emoji.csv]</parent-name>
+            <remote-alias>group</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.10_emoji.csv_AFDDDB71A2964DB7B7444159E0D7CCB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sub_group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sub_group]</local-name>
+            <parent-name>[1.10_emoji.csv]</parent-name>
+            <remote-alias>sub_group</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.10_emoji.csv_AFDDDB71A2964DB7B7444159E0D7CCB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>codepoints</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[codepoints]</local-name>
+            <parent-name>[1.10_emoji.csv]</parent-name>
+            <remote-alias>codepoints</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.10_emoji.csv_AFDDDB71A2964DB7B7444159E0D7CCB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='1.10_emoji.csv' datatype='table' name='[__tableau_internal_object_id__].[1.10_emoji.csv_AFDDDB71A2964DB7B7444159E0D7CCB0]' role='measure' type='quantitative' />
+      <column caption='Codepoints' datatype='string' name='[codepoints]' role='dimension' type='nominal' />
+      <column caption='Emoji' datatype='string' name='[emoji]' role='dimension' type='nominal' />
+      <column caption='Group' datatype='string' name='[group]' role='dimension' type='nominal' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Sub Group' datatype='string' name='[sub_group]' role='dimension' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='zh_TW' class='hyper' dbname='C:/Users/user/AppData/Local/Temp/TableauTemp/#TableauTemp_1ag934l1az2jlz1eiw5un0az3ctq.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/14/2024 09:36:31 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>emoji</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[emoji]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>emoji</remote-alias>
+              <ordinal>0</ordinal>
+              <family>1.10_emoji.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4581</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.10_emoji.csv_AFDDDB71A2964DB7B7444159E0D7CCB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>name</remote-alias>
+              <ordinal>1</ordinal>
+              <family>1.10_emoji.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2263</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.10_emoji.csv_AFDDDB71A2964DB7B7444159E0D7CCB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>group</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[group]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>group</remote-alias>
+              <ordinal>2</ordinal>
+              <family>1.10_emoji.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.10_emoji.csv_AFDDDB71A2964DB7B7444159E0D7CCB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sub_group</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[sub_group]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sub_group</remote-alias>
+              <ordinal>3</ordinal>
+              <family>1.10_emoji.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>109</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.10_emoji.csv_AFDDDB71A2964DB7B7444159E0D7CCB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>codepoints</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[codepoints]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>codepoints</remote-alias>
+              <ordinal>4</ordinal>
+              <family>1.10_emoji.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4581</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[1.10_emoji.csv_AFDDDB71A2964DB7B7444159E0D7CCB0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Taiwan&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='1.10_emoji.csv' id='1.10_emoji.csv_AFDDDB71A2964DB7B7444159E0D7CCB0'>
+            <properties context=''>
+              <relation connection='textscan.0tx3fhf081kfqe17efshp1qjogyc' name='1.10_emoji.csv' table='[1.10_emoji#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='zh_TW' separator=','>
+                  <column datatype='string' name='emoji' ordinal='0' />
+                  <column datatype='string' name='name' ordinal='1' />
+                  <column datatype='string' name='group' ordinal='2' />
+                  <column datatype='string' name='sub_group' ordinal='3' />
+                  <column datatype='string' name='codepoints' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='工作表 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='微軟正黑體' fontsize='16'>長條圖的繪圖文字清單</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='1.10_emoji' name='federated.08eyod20be905i1f21wfu0agffk2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.08eyod20be905i1f21wfu0agffk2'>
+            <column-instance column='[name]' derivation='Attribute' name='[attr:name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[emoji]' derivation='CountD' name='[ctd:emoji:qk]' pivot='key' type='quantitative' />
+            <column caption='Emoji' datatype='string' name='[emoji]' role='dimension' type='nominal' />
+            <column caption='Group' datatype='string' name='[group]' role='dimension' type='nominal' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[emoji]' derivation='None' name='[none:emoji:nk]' pivot='key' type='nominal' />
+            <column-instance column='[group]' derivation='None' name='[none:group:nk]' pivot='key' type='nominal' />
+            <column-instance column='[sub_group]' derivation='None' name='[none:sub_group:nk]' pivot='key' type='nominal' />
+            <column caption='Sub Group' datatype='string' name='[sub_group]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.08eyod20be905i1f21wfu0agffk2].[none:emoji:nk]'>
+            <groupfilter function='level-members' level='[none:emoji:nk]' user:ui-manual-selection='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.08eyod20be905i1f21wfu0agffk2].[none:group:nk]'>
+            <groupfilter function='member' level='[none:group:nk]' member='&quot;Animals &amp; Nature&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.08eyod20be905i1f21wfu0agffk2].[none:emoji:nk]</column>
+            <column>[federated.08eyod20be905i1f21wfu0agffk2].[none:group:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.08eyod20be905i1f21wfu0agffk2].[none:emoji:nk]' />
+              <tooltip column='[federated.08eyod20be905i1f21wfu0agffk2].[attr:name:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontname='微軟正黑體' fontsize='12'><![CDATA[<[federated.08eyod20be905i1f21wfu0agffk2].[attr:name:nk]>]]></run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run bold='true' fontalignment='1' fontname='微軟正黑體' fontsize='22'><![CDATA[<[federated.08eyod20be905i1f21wfu0agffk2].[none:emoji:nk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#ffaa00' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.08eyod20be905i1f21wfu0agffk2].[ctd:emoji:qk]</rows>
+        <cols>[federated.08eyod20be905i1f21wfu0agffk2].[none:sub_group:nk]</cols>
+      </table>
+      <simple-id uuid='{38A57673-8BB3-4F3A-8229-5F48F0192AC2}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='工作表 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.08eyod20be905i1f21wfu0agffk2].[none:group:nk]' type='filter' />
+            <card mode='typeinlist' param='[federated.08eyod20be905i1f21wfu0agffk2].[none:emoji:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.08eyod20be905i1f21wfu0agffk2].[none:emoji:nk]</field>
+            <field>[federated.08eyod20be905i1f21wfu0agffk2].[none:name:nk]</field>
+            <field>[federated.08eyod20be905i1f21wfu0agffk2].[none:sub_group:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{92241332-02C5-4312-B571-9A6465CB1536}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='工作表 1' width='192'>
+      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
+      AnEphPf9L1Nuy6uX1cXyAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
